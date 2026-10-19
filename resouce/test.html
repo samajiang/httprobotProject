@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>编程语言排行榜</title>
+</head>
+<body>
+    <div id="header" class="container">
+        <h1>2026年编程语言排行榜</h1>
+        <nav id="menu" class="navigation">
+            <ul>
+                <li><a href="/home" class="active">首页</a></li>
+                <li><a href="/ranking">排行榜</a></li>
+                <li><a href="/about">关于我们</a></li>
+                <li><a href="/contact" data-role="link">联系方式</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="content" class="container main-content">
+        <div class="section" id="ranking-section">
+            <h2 class="title">热门语言排名</h2>
+            <table id="lang-table" class="data-table" border="1">
+                <thead>
+                    <tr>
+                        <th data-col="rank">排名</th>
+                        <th data-col="name">语言</th>
+                        <th data-col="rating">份额</th>
+                        <th data-col="change">变化</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="row" data-rank="1">
+                        <td class="rank">1</td>
+                        <td class="name" data-lang="python">Python</td>
+                        <td class="rating">23.5%</td>
+                        <td class="change up">+2.1%</td>
+                    </tr>
+                    <tr class="row" data-rank="2">
+                        <td class="rank">2</td>
+                        <td class="name" data-lang="java">Java</td>
+                        <td class="rating">18.2%</td>
+                        <td class="change down">-1.3%</td>
+                    </tr>
+                    <tr class="row" data-rank="3">
+                        <td class="rank">3</td>
+                        <td class="name" data-lang="javascript">JavaScript</td>
+                        <td class="rating">12.8%</td>
+                        <td class="change up">+0.5%</td>
+                    </tr>
+                    <tr class="row" data-rank="4">
+                        <td class="rank">4</td>
+                        <td class="name" data-lang="csharp">C#</td>
+                        <td class="rating">8.6%</td>
+                        <td class="change up">+1.2%</td>
+                    </tr>
+                    <tr class="row" data-rank="5">
+                        <td class="rank">5</td>
+                        <td class="name" data-lang="cpp">C++</td>
+                        <td class="rating">7.1%</td>
+                        <td class="change down">-0.8%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="section" id="detail-section">
+            <h2 class="title">语言详情</h2>
+            <div class="card" data-id="101" data-category="scripting">
+                <h3 class="card-title">Python</h3>
+                <p class="desc">Python是一种<strong>高级</strong>、<strong>解释型</strong>的编程语言。</p>
+                <ul class="features">
+                    <li class="feature" data-type="paradigm">面向对象</li>
+                    <li class="feature" data-type="paradigm">函数式编程</li>
+                    <li class="feature" data-type="usage">人工智能</li>
+                    <li class="feature" data-type="usage">数据分析</li>
+                    <li class="feature" data-type="usage">Web开发</li>
+                </ul>
+                <span class="tag" data-level="hot">热门</span>
+                <span class="tag" data-level="easy">易学</span>
+            </div>
+
+            <div class="card" data-id="102" data-category="compiled">
+                <h3 class="card-title">Java</h3>
+                <p class="desc">Java是一种<strong>跨平台</strong>、<strong>面向对象</strong>的编程语言。</p>
+                <ul class="features">
+                    <li class="feature" data-type="paradigm">面向对象</li>
+                    <li class="feature" data-type="usage">企业级应用</li>
+                    <li class="feature" data-type="usage">Android开发</li>
+                </ul>
+                <span class="tag" data-level="stable">稳定</span>
+                <span class="tag" data-level="popular">流行</span>
+            </div>
+
+            <div class="card" data-id="103" data-category="scripting">
+                <h3 class="card-title">JavaScript</h3>
+                <p class="desc">JavaScript是<strong>Web</strong>开发中不可或缺的<strong>脚本</strong>语言。</p>
+                <ul class="features">
+                    <li class="feature" data-type="paradigm">事件驱动</li>
+                    <li class="feature" data-type="paradigm">函数式编程</li>
+                    <li class="feature" data-type="usage">前端开发</li>
+                    <li class="feature" data-type="usage">后端开发</li>
+                </ul>
+                <span class="tag" data-level="hot">热门</span>
+                <span class="tag" data-level="versatile">多用途</span>
+            </div>
+        </div>
+
+        <div class="section" id="comments-section">
+            <h2 class="title">用户评论</h2>
+            <div class="comment" data-user="alice" data-date="2026-10-01">
+                <span class="username">Alice</span>
+                <p>Python真的是最好的语言！</p>
+                <span class="likes" data-count="42">42赞</span>
+            </div>
+            <div class="comment" data-user="bob" data-date="2026-10-05">
+                <span class="username">Bob</span>
+                <p>Java在企业级开发中依然是王者。</p>
+                <span class="likes" data-count="28">28赞</span>
+            </div>
+            <div class="comment" data-user="charlie" data-date="2026-10-10">
+                <span class="username">Charlie</span>
+                <p>JavaScript无处不在，太厉害了！</p>
+                <span class="likes" data-count="35">35赞</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer" class="container">
+        <p>Copyright &copy; 2026 编程语言排行榜</p>
+        <a href="mailto:admin@example.com" class="email-link">联系管理员</a>
+        <a href="/privacy" class="footer-link">隐私政策</a>
+        <a href="/terms" class="footer-link">使用条款</a>
+    </div>
+</body>
+</html>
